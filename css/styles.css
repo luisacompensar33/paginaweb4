@@ -1,0 +1,274 @@
+/* Sección de experiencia */
+/* Paleta de colores profesional */
+:root {
+    --color1: #2E3A46; /* Azul grisáceo */
+    --color2: #516B78; /* Azul claro */
+    --color3: #8EAEBE; /* Azul pastel */
+    --color4: #F4F4F9; /* Blanco suave */
+    --color5: #1F262D; /* Gris oscuro */
+    --background: #1A1E23; /* Fondo oscuro */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--color4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: var(--color5);
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img-header {
+    width: 200px; /* Ancho */
+    height: 200px; /* Alto */
+    border: 5px solid var(--color3); /* Borde */
+    margin-bottom: 20px;
+    object-fit: cover; /* Recorta automáticamente si es necesario */
+    object-position: center; /* Centra el contenido */
+    display: block;
+}
+
+.text-content h1 {
+    margin: 0;
+    font-size: 32px;
+    color: var(--color3);
+}
+
+.text-content h2 {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: var(--color3);
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: var(--color1);
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--color4);
+}
+
+/* Sección de perfil */
+.profile {
+    margin: 30px auto;
+    background-color: var(--color2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    color: var(--color4);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.bloque_de_mis_proyectos {
+    margin: 30px auto;
+    background-color: var(--color2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: var(--color4);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    height: 450px; /* Cambia este valor según el alto deseado */
+}
+.bloque_de_mis_proyectos_text {
+    margin: 10px auto;
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    width: 80%;
+    max-height: 50px;
+}
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.profile p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-size: 14px;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+.experience-section {
+    margin: 30px auto;
+    background-color: var(--color2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    height: 250px;
+
+}
+
+.section-title {
+    background-color: var(--color1);
+    color: var(--color3);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la cuadrícula */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espaciado entre bloques */
+    justify-items: center;
+}
+
+/* Bloques individuales */
+
+
+.experience-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-block {
+    background-color: #1F262D;
+    color: var(--color4);
+    width: 90%;
+    max-width: 250px;
+    height: auto; /* Permite que el bloque se adapte al contenido */
+    display: flex;
+    flex-direction: column; /* Coloca imagen y texto en una columna */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-block img {
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo de la imagen */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.experience-block p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--color4);
+    text-align: center;
+}
+
+#bloque de codigo para el texto adicional de descripcion de proyectos realizados
+
+.bloque_de_mis_proyectos1 {
+    margin: 30px auto;
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: var(--color4);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    height: 450px; /* Cambia este valor según el alto deseado */
+}
+.bloque_de_mis_proyectos_text1 {
+    margin: 10px auto;
+    background-color: var(--background);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    width: 80%;
+    max-height: 50px;
+}
+
+.experience-section1 {
+    margin: 30px auto;
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    height: 250px;
+
+}
+
+.experience-container_text{
+  text-align: left;
+  padding: 15px 0;
+  background-color: var(--background);
+  color: var(--color4);
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+}
